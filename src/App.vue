@@ -1,5 +1,20 @@
+<script setup>
+import { themeChange } from "theme-change";
+
+themeChange(true);
+</script>
+
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-slate-900">
-    <h1 class="text-5x1 text-white">Little Labs</h1>
+  <div
+    class="min-h-screen flex flex-col items-center justify-center bg-base-100 transition-colors duration-300"
+  >
+    <h1 class="text-5xl mb-8">Little Labs</h1>
+
+    <!-- Theme toggle button -->
+    <button data-set-theme="cupcake" class="btn btn-primary mb-4">
+      Light Theme
+    </button>
+
+    <button data-set-theme="dark" class="btn btn-secondary">Dark Theme</button>
   </div>
 </template>
