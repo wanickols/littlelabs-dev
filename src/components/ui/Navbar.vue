@@ -4,9 +4,9 @@ import ThemeDropdown from "./ThemeDropdown.vue";
 import { themeChange } from "theme-change";
 
 const navLinks = [
-  { name: "Home", href: "" },
+  { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: "About", href: "/about" },
 ];
 themeChange(false);
 </script>
@@ -15,13 +15,20 @@ themeChange(false);
   <div class="navbar bg-base-100 shadow-sm">
     <div class="navbar-start">
       <HamburgerMenu :links="navLinks" />
-      <a class="btn btn-ghost text-xl">Little Labs</a>
+      <router-link to="/" class="btn btn-ghost text-xl"
+        >Little Labs</router-link
+      >
     </div>
     <div class="navbar-center hidden md:flex">
       <ul class="menu menu-horizontal px-1">
-        <li v-for="link in navLinks" :key="link.name">
-          <a :href="link.href">{{ link.name }}</a>
-        </li>
+        <router-link
+          v-for="link in navLinks"
+          :key="link.name"
+          :to="link.href"
+          class="btn btn-ghost px-2"
+        >
+          {{ link.name }}
+        </router-link>
       </ul>
     </div>
     <div class="navbar-end">

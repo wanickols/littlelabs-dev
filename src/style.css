@@ -23,10 +23,6 @@
   p {
     @apply mb-4 leading-relaxed text-base;
   }
-
-  a {
-    @apply text-blue-600 underline hover:text-blue-800 transition-colors;
-  }
 }
 
 @layer utilities {
