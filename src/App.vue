@@ -1,9 +1,7 @@
 <script setup>
-import { onMounted } from "vue";
-import { themeChange } from "theme-change";
 import Navbar from "./components/ui/Navbar.vue";
 import Footer from "./components/ui/Footer.vue";
-import PrivacyView from "./pages/PrivacyView.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
@@ -11,9 +9,8 @@ import PrivacyView from "./pages/PrivacyView.vue";
     <Navbar />
     <!-- This fills the vertical space between nav and footer -->
     <main class="flex-grow flex items-center justify-center">
-      <PrivacyView />
+      <RouterView />
     </main>
-
     <Footer />
   </div>
 </template>
