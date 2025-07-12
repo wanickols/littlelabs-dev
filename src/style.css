@@ -11,4 +11,54 @@
   body {
     font-family: var(--font-display);
   }
+
+  h2 {
+    @apply text-4xl font-bold mb-6;
+  }
+
+  h3 {
+    @apply text-xl font-semibold mb-2;
+  }
+
+  p {
+    @apply mb-4 leading-relaxed text-base;
+  }
+
+  a {
+    @apply text-blue-600 underline hover:text-blue-800 transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-fluid {
+    font-size: clamp(2rem, 2.5vw, 3rem);
+  }
+
+  .px-fluid {
+    padding-left: clamp(2rem, 4vw, 3rem);
+    padding-right: clamp(2rem, 4vw, 3rem);
+    max-width: 40rem;
+  }
+
+  .title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+  }
+
+  .titlexl {
+    font-size: clamp(4rem, 4vw, 8rem);
+    font-weight: 900;
+    color: var(--color-secondary);
+  }
+
+  .subtitle {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  .paragraph {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    line-height: 1.75;
+  }
 }
