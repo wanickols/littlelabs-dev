@@ -1,6 +1,12 @@
 <script setup>
 import Navbar from "./components/ui/Navbar.vue";
 import Footer from "./components/ui/Footer.vue";
+
+const savedPath = sessionStorage.getItem("redirect-path");
+if (savedPath) {
+  sessionStorage.removeItem("redirect-path");
+  window.history.replaceState({}, "", savedPath);
+}
 </script>
 
 <template>
