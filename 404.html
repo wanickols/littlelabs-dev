@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Grab the current full path
+      const redirectPath = window.location.pathname + window.location.search + window.location.hash;
+      // Store it temporarily
+      sessionStorage.setItem('redirect-path', redirectPath);
+      // Redirect to index.html
+      window.location.replace('/');
+    </script>
   </head>
   <body>
     <p>Redirecting...</p>
