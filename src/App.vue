@@ -1,6 +1,6 @@
 <script setup>
-import Navbar from "./components/ui/Navbar.vue";
-import Footer from "./components/ui/Footer.vue";
+import Navbar from "@components/layout/navbar/Navbar.vue";
+import Footer from "@components/layout/Footer.vue";
 
 const savedPath = sessionStorage.getItem("redirect-path");
 if (savedPath) {

@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import HamburgerMenu from "./HamburgerMenu.vue";
-import ThemeDropdown from "./ThemeDropdown.vue";
+import HamburgerMenu from "@components/ui/menus/HamburgerMenu.vue";
+
 import { themeChange } from "theme-change";
+import ThemeDropdown from "./ThemeDropdown.vue";
 
 const navLinks = [
   { name: "Home", href: "/" },
