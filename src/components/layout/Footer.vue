@@ -2,7 +2,7 @@
 import { themeChange } from "theme-change";
 
 const footLinks = [
-  { name: "Contact Us", href: "/contact-us" },
+  { name: "Contact Us", href: "/contact" },
   { name: "Privacy", href: "/privacy" },
 ];
 themeChange(false);

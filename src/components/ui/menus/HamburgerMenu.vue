@@ -27,7 +27,7 @@ defineProps<{
       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
     >
       <li v-for="link in links" :key="link.name">
-        <a :href="link.href">{{ link.name }}</a>
+        <router-link :to="link.href">{{ link.name }}</router-link>
       </li>
     </ul>
   </div>

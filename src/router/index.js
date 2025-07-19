@@ -23,7 +23,7 @@ const routes = [
     component: AboutView,
   },
   {
-    path: "/contact-us",
+    path: "/contact",
     name: "contact",
     component: ContactUsView,
   },
