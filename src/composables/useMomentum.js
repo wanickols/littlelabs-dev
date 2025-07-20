@@ -1,15 +1,15 @@
 // src/composables/useMomentum.js
 import { ref } from "vue";
 
-export function useMomentum(
-  initialX = 100,
-  initialY = 100,
-  boxWidth = 100,
-  boxHeight = 100
-) {
+export function useMomentum(boxWidth = 100, boxHeight = 100) {
+  let initialX = 0;
+  let initialY = 0;
+
   // Reactive position
   const x = ref(initialX);
   const y = ref(initialY);
+
+  let notSet = true;
 
   // Internal velocity (not reactive)
   let velocityX = 0;
@@ -23,6 +23,14 @@ export function useMomentum(
   function incrementPos(dx, dy) {
     x.value += dx;
     y.value += dy;
+  }
+
+  function setPos(newX, newY) {
+    if (notSet) {
+      initialX = newX;
+      initialY = newY;
+      notSet = false;
+    }
   }
 
   // Apply friction to velocity
@@ -80,6 +88,7 @@ export function useMomentum(
     x,
     y,
     incrementPos,
+    setPos,
     applyFriction,
     checkBoundaries,
     setVelocity,
