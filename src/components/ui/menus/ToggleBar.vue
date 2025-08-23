@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, defineProps, defineEmits } from "vue";
-import ToggleButton from "@/components/ui/buttons/toggleButton.vue";
+import ToggleButton from "@/components/ui/buttons/ToggleButton.vue";
 
 const props = defineProps<{
   categories: string[];
