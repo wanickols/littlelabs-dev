@@ -5,6 +5,7 @@
     "target": "esnext", // or "es2015"
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
+    "module": "esnext",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "paths": {

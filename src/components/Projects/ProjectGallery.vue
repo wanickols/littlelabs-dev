@@ -25,7 +25,7 @@ const filteredProjects = computed(() =>
     <ProjectCard
       v-for="(proj, index) in filteredProjects"
       :key="index"
-      v-bind="proj"
+      :project="proj"
     />
   </div>
 </template>

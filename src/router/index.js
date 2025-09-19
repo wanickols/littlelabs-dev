@@ -5,6 +5,7 @@ import PrivacyView from "@/views/PrivacyView.vue";
 import AboutView from "@/views/AboutView.vue";
 import ContactUsView from "@/views/ContactUsView.vue";
 import ProjectsView from "@/views/ProjectsView.vue";
+import ProjectPage from "@/views/ProjectPage.vue";
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
     path: "/projects",
     name: "projects",
     component: ProjectsView,
+  },
+  {
+    path: "/projects/:slug",
+    name: "ProjectPage",
+    component: ProjectPage,
   },
 ];
 
