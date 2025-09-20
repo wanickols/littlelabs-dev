@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref, watchEffect } from "vue";
 import { useRouter } from "vue-router";
-import Draggable from "@/components/Draggable/Draggable.vue";
-import Bucket from "@/components/Draggable/Bucket.vue";
+import Draggable from "@/components/draggable/Draggable.vue";
+import Bucket from "@/components/draggable/Bucket.vue";
 
 const router = useRouter();
 const targets = ref([]);

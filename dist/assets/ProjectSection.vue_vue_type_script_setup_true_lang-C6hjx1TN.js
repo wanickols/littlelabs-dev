@@ -1,0 +1,1 @@
+import{d as s,c as o,b as t,t as n,h as a,o as c}from"./index-s-YtgxDt.js";const l={class:"mb-6"},r={class:"text-2xl font-semibold mb-2"},d=s({__name:"ProjectSection",props:{title:{}},setup(i){return(e,_)=>(c(),o("section",l,[t("h2",r,n(e.title),1),t("div",null,[a(e.$slots,"default")])]))}});export{d as _};

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProjectGallery from "@/components/Projects/ProjectGallery.vue";
+import ProjectGallery from "@/components/projects/ProjectGallery.vue";
 
 import { ref, computed } from "vue";
 import { projects } from "@/assets/data/projects";

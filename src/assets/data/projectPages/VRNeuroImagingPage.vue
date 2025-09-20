@@ -86,7 +86,7 @@ const project = projects.find((p) => p.slug === slug);
     </p>
 
     <video
-      src="@/assets/img/Projects/NueroImaging/NueroGif.mp4"
+      src="@/assets/img/projects/NueroImaging/NueroGif.mp4"
       autoplay
       loop
       muted

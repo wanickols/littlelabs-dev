@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import ProjectSection from "@/components/sections/ProjectSection.vue";
-import segmented from "../../img/ProjectThumbnails/BrickReader.png";
-import edged from "../../img/Projects/BrickReader/bricksEdge.png";
-import dilated from "../../img/Projects/BrickReader/bricksDilated.png";
-import color from "../../img/Projects/BrickReader/bricksColor.png";
-import results from "../../img/Projects/BrickReader/Results.png";
+import segmented from "@/assets/img/ProjectThumbnails/BrickReader.png";
+import edged from "@/assets/img/projects/brickreader/bricksEdge.png";
+import dilated from "@/assets/img/projects/brickreader/bricksDilated.png";
+import color from "@/assets/img/projects/brickreader/bricksColor.png";
+import results from "@/assets/img/projects/brickreader/Results.png";
 </script>
 
 <template>
