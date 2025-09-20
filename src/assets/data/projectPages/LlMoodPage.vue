@@ -5,8 +5,8 @@ import ProjectSection from "@/components/sections/ProjectSection.vue";
 import ProjectLinks from "@/components/sections/ProjectLinks.vue";
 import screen1 from "@/assets/img/projects/llmood/moodselect.png";
 import screen2 from "@/assets/img/projects/llmood/moodHappy.png";
-import screen3 from "@/assets/img/projects/llmood/moodCalendar.png";
-import screen4 from "@/assets/img/projects/llmood/moodSettings.png";
+import screen3 from "@/assets/img/projects/llmood/moodcalendar.png";
+import screen4 from "@/assets/img/projects/llmood/moodsettings.png";
 
 const screenshots = [
   {
