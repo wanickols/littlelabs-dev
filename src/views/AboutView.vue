@@ -1,5 +1,5 @@
 <template>
-  <section class="px-fluid text-base-content">
+  <section class="px-fluid pt-6 pb-12 text-base-content">
     <h2 class="titlexl">About Me</h2>
 
     <h3 class="subtitle mt-6">What I Build — and Why</h3>

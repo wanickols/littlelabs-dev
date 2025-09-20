@@ -1,6 +1,7 @@
 import llmoodImg from "../img/ProjectThumbnails/llmood.png";
 import webImg from "../img/ProjectThumbnails/website.png";
 import aiBrickImg from "../img/ProjectThumbnails/BrickReader.png";
+import nueroImg from "../img/ProjectThumbnails/NeuroDemo.png";
 
 export type Project = {
   slug: string;
@@ -28,7 +29,7 @@ export const projects: Project[] = [
     content: () => import("./projectPages/LlMoodPage.vue"),
   },
   {
-    slug: "website",
+    slug: "ll-website",
     title: "Little Labs Website",
     description:
       "A personal site and app showcase for clients and experiments.",
@@ -36,7 +37,7 @@ export const projects: Project[] = [
     techStack: ["Vue", "Vite", "Tailwind"],
     category: "websites",
     sourceLink: "https://github.com/wanickols/littlelabs-dev",
-
+    liveLink: "https://littlelabs.dev",
     content: () => import("./projectPages/LLWebPage.vue"),
   },
   {
@@ -48,8 +49,18 @@ export const projects: Project[] = [
     techStack: ["Python", "OpenCV", "PaddleOCR"],
     category: "apps",
     sourceLink: "https://github.com/wanickols/ai-brickreader",
-    liveLink: "",
 
     content: () => import("./projectPages/AIBrickReaderPage.vue"),
+  },
+  {
+    slug: "vr-neuroimaging",
+    title: "VR NeuroImaging",
+    description:
+      "An interactive solution for visualizing and exploring DICOM images.",
+    thumbnail: nueroImg,
+    techStack: ["Unity", "C#", "Qt", "C++"],
+    category: "desktop",
+
+    content: () => import("./projectPages/VRNeuroImagingPage.vue"),
   },
 ];

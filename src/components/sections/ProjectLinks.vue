@@ -25,6 +25,7 @@ defineProps<{
     >
       Live Demo
     </a>
+    <a v-else-if="liveLink == null"> </a>
     <a
       v-else
       href="#"

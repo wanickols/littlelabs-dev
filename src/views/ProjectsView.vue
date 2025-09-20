@@ -5,7 +5,7 @@ import { ref, computed } from "vue";
 import { projects } from "@/assets/data/projects";
 import ToggleBar from "@/components/ui/menus/ToggleBar.vue";
 
-const allCategories = ["apps", "websites"];
+const allCategories = ["apps", "websites", "desktop"];
 const selectedCategories = ref<string[]>([]);
 
 const filteredCategories = computed(() => {

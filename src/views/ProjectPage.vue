@@ -14,7 +14,7 @@ if (project?.content) {
 </script>
 
 <template>
-  <div v-if="project" class="px-fluid text-base-content">
+  <div v-if="project" class="px-fluid pt-6 pb-12 text-base-content">
     <header>
       <h1 class="text-4xl font-bold mb-2">{{ project.title }}</h1>
       <p>{{ project.description }}</p>
