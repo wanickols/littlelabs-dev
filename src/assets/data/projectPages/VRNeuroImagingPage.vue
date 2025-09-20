@@ -2,34 +2,6 @@
 import { useRoute } from "vue-router";
 import { projects } from "@/assets/data/projects"; // wherever your array is
 import ProjectSection from "@/components/sections/ProjectSection.vue";
-import ProjectLinks from "@/components/sections/ProjectLinks.vue";
-import screen1 from "@/assets/img/projects/llmood/moodselect.png";
-import screen2 from "@/assets/img/projects/llmood/moodHappy.png";
-import screen3 from "@/assets/img/projects/llmood/moodCalendar.png";
-import screen4 from "@/assets/img/projects/llmood/moodSettings.png";
-
-const screenshots = [
-  {
-    src: screen1,
-    alt: "Mood selection",
-    caption: "Pick your mood for the day with a single tap.",
-  },
-  {
-    src: screen2,
-    alt: "Mood Chosen",
-    caption: "See a gentle reflection after logging.",
-  },
-  {
-    src: screen3,
-    alt: "Mood Calendar",
-    caption: "Browse your history on a simple calendar view.",
-  },
-  {
-    src: screen4,
-    alt: "Settings",
-    caption: "Adjust reminders and preferences in settings.",
-  },
-];
 
 const route = useRoute();
 const slug = route.params.slug as string;
@@ -86,7 +58,7 @@ const project = projects.find((p) => p.slug === slug);
     </p>
 
     <video
-      src="@/assets/img/projects/NueroImaging/NueroGif.mp4"
+      src="@/assets/img/projects/nueroimaging/NueroGif.mp4"
       autoplay
       loop
       muted
