@@ -8,10 +8,10 @@ import results from "@/assets/img/projects/brickreader/Results.png";
 </script>
 
 <template>
-  <div class="max-w-3xl mx-auto p-6 space-y-6">
+  <div>
     <!-- About -->
     <ProjectSection title="About the Project">
-      <p class="leading-relaxed">
+      <p>
         AI BrickReader is a computer vision project developed to read alumni
         names engraved on sidewalk bricks. The system processes photos, segments
         each brick using <strong>OpenCV</strong>, and applies
@@ -20,7 +20,7 @@ import results from "@/assets/img/projects/brickreader/Results.png";
         contain text, and the second extracts confirmed inscriptions. Results
         are exported to structured CSV files for easy use.
       </p>
-      <p class="leading-relaxed mt-2">
+      <p>
         While further expansion was planned, development paused after leadership
         changes. The project nonetheless demonstrates practical skills in image
         processing, OCR integration, and building an end-to-end data pipeline.
@@ -39,7 +39,7 @@ import results from "@/assets/img/projects/brickreader/Results.png";
     </ProjectSection>
 
     <ProjectSection title="How It Works">
-      <p class="leading-relaxed mb-6">
+      <p class="mb-6">
         The BrickReader workflow uses computer vision and OCR in several stages
         to extract text from sidewalk bricks:
       </p>
@@ -91,7 +91,7 @@ import results from "@/assets/img/projects/brickreader/Results.png";
           alt="OCR results output"
           class="w-full rounded-lg shadow"
         />
-        <p class="mt-1 text-center">
+        <p class="mt-1 text-sm text-center">
           5. Double-pass OCR extracts confirmed text and outputs to CSV
         </p>
       </div>

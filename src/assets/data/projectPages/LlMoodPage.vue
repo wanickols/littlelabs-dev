@@ -73,32 +73,35 @@ const project = projects.find((p) => p.slug === slug);
     </ProjectSection>
 
     <ProjectSection title="In Action">
-      <p class="leading-relaxed mb-4">
+      <p>
         Here’s a quick walkthrough of LL Mood — from logging a mood to reviewing
         your history and adjusting reminders.
       </p>
+
       <div
-        class="flex space-x-4 overflow-x-auto pb-2 max-sm:snap-x max-sm:snap-mandatory"
+        class="pointer-events-none absolute top-0 right-0 h-full w-8 bg-gradient-to-l from-base-100"
+      ></div>
+
+      <div
+        class="flex space-x-4 overflow-x-auto pb-2 max-sm:snap-x max-sm:snap-mandatory pr-4"
       >
         <div
           v-for="(shot, i) in screenshots"
           :key="i"
-          class="flex-shrink-0 w-60 flex flex-col items-center max-sm:snap-center"
+          class="flex-shrink-0 w-full sm:w-60 flex flex-col items-center max-sm:snap-center"
         >
           <img
             :src="shot.src"
             :alt="shot.alt"
             class="rounded-lg shadow object-contain"
           />
-          <p class="mt-1 text-sm text-center">
-            {{ shot.caption }}
-          </p>
+          <p class="mt-1 text-sm text-center">{{ shot.caption }}</p>
         </div>
       </div>
     </ProjectSection>
 
     <ProjectSection title="Try It Yourself">
-      <p class="leading-relaxed mb-4">
+      <p>
         Curious to dig deeper? You can explore the source code or check out the
         live app once it’s published.
       </p>
