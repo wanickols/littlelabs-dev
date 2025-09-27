@@ -4,7 +4,7 @@ import { projects } from "@/assets/data/projects"; // wherever your array is
 import ProjectSection from "@/components/sections/ProjectSection.vue";
 import ProjectLinks from "@/components/sections/ProjectLinks.vue";
 
-const route = useRoute();
+const route = useRoute()
 const slug = route.params.slug as string;
 
 // find the matching project by slug
