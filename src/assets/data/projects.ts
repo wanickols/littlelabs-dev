@@ -3,6 +3,8 @@ import libreImg from "../img/ProjectThumbnails/libretexts.png";
 import webImg from "../img/ProjectThumbnails/website.png";
 import aiBrickImg from "../img/ProjectThumbnails/BrickReader.png";
 import nueroImg from "../img/ProjectThumbnails/NeuroDemo.png";
+import echoChatImg from "../img/ProjectThumbnails/NeuroDemo.png";
+import echoStreamImg from "../img/ProjectThumbnails/NeuroDemo.png";
 import reboundImg from "../img/ProjectThumbnails/ReboundTitle.png";
 import molImg from "../img/ProjectThumbnails/molecules.png";
 
@@ -84,7 +86,7 @@ export const projects: Project[] = [
       "Automated OCR system for reading alumni bricks from sidewalk images.",
     thumbnail: aiBrickImg,
     techStack: ["Python", "OpenCV", "PaddleOCR"],
-    category: "apps",
+    category: "desktop",
     sourceLink: "https://github.com/wanickols/ai-brickreader",
 
     content: () => import("./projectPages/AIBrickReaderPage.vue"),
@@ -100,4 +102,27 @@ export const projects: Project[] = [
 
     content: () => import("./projectPages/VRNeuroImagingPage.vue"),
   },
+{
+  slug: "echostream",
+  title: "EchoStream: Real-Time Video/Audio Prototype",
+  description:
+    "Desktop prototype exploring real-time video/audio streaming using Tauri, Go, Vue, and Rust. Implemented backend streaming with PION (Opus for audio, H.264 for video) and frontend integration handles. Paused after challenges with under-documented codecs.",
+  thumbnail: echoStreamImg,
+  techStack: ["Go", "Rust", "Tauri", "Vue", "PION", "Opus", "H.264"],
+  category: "desktop",
+  sourceLink: "", // optional if private
+  content: () => import("./projectPages/EchoStreamPage.vue"),
+},
+{
+  slug: "echochat",
+  title: "EchoChat: Real-Time Messaging",
+  description:
+    "Mini chatroom project spun off from EchoStream to strengthen backend and networking skills in Go. Implemented connection pooling, basic messaging, and frontend integration, laying a foundation for real-time communication systems.",
+  thumbnail: echoChatImg,
+  techStack: ["Go", "Tauri", "Vue", "Networking", "Concurrency"],
+  category: "desktop",
+  sourceLink: "", // optional
+  content: () => import("./projectPages/EchoChatPage.vue"),
+}
+
 ];
