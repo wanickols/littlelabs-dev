@@ -1,4 +1,5 @@
 import llmoodImg from "../img/ProjectThumbnails/llmood.png";
+import libreImg from "../img/ProjectThumbnails/libretexts.png";
 import webImg from "../img/ProjectThumbnails/website.png";
 import aiBrickImg from "../img/ProjectThumbnails/BrickReader.png";
 import nueroImg from "../img/ProjectThumbnails/NeuroDemo.png";
@@ -17,6 +18,18 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "libretexts-adapt-go",
+    title: "LibreTexts Adapt Go",
+    description:
+      "Mobile companion app for classroom engagement, featuring live polling, assignments, and quiz access integrated with the LibreTexts platform.",
+    thumbnail: libreImg, // swap with your actual import
+    techStack: ["Flutter", "Dart", "REST API", "SSO"],
+    category: "apps",
+    sourceLink: "",
+
+    content: () => import("./projectPages/LibreTextsAdaptGoPage.vue"),
+  },
   {
     slug: "ll-mood",
     title: "ll Mood",
