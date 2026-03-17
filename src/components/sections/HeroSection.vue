@@ -11,11 +11,15 @@
           </h1>
 
           <p class="paragraph mt-6">
-            I build across web, mobile, desktop, and real-time systems: I'll
-            learn what I have to. I've shipped apps to the App Store and Play
-            Store, built AI-powered tools, and I'm currently developing a
-            multiplayer game in Rust with a Vue frontend.
-            <br /><br />
+            I build across web, mobile, desktop, and real-time systems. I learn
+            what I have to.
+          </p>
+          <p class="paragraph mt-2">
+            I've shipped apps to the App Store and Play Store, built AI-powered
+            tools, and I'm currently developing a multiplayer game in Rust with
+            a Vue frontend.
+          </p>
+          <p class="paragraph mt-2">
             I focus less on stacks and more on learning quickly and making
             systems work.
           </p>

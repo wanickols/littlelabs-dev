@@ -43,12 +43,13 @@ const project = projects.find((p) => p.slug === slug);
     <!-- About Section -->
     <ProjectSection title="About the App">
       <p>
-        LL Mood is a mood tracking app I built as a personal project. My goal
-        was to design a tool that feels light, pressure-free, and
-        approachable—focusing more on consistency than on complex analytics.
-        From a development perspective, the challenge was building an
-        offline-first app with clean storage, a minimalist UI, and a gentle
-        reminder system.
+        I built LL Mood mostly for myself. I was annoyed at existing mood apps
+        because they all wanted you to log in or made things more complicated
+        than necessary. I wanted something quick and intuitive, so I could just
+        check in with how I was feeling. On the dev side, it was fun to make the
+        app respond to your current mood, adapting the pages slightly depending
+        on your selection. It’s a small, focused project, but I really enjoyed
+        polishing the details and making it feel smooth and personal.
       </p>
     </ProjectSection>
     <!-- Features -->
@@ -60,7 +61,7 @@ const project = projects.find((p) => p.slug === slug);
         <li>
           Calendar-based history to encourage reflection without comparison.
         </li>
-        <li>Minimalist UI/UX — designed for calm over complexity.</li>
+        <li>Minimalist UI/UX designed for calm over complexity.</li>
         <li>Offline-first design with local notifications</li>
       </ul>
     </ProjectSection>

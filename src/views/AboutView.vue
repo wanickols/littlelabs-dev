@@ -2,50 +2,57 @@
   <section class="px-fluid pt-6 pb-12 text-base-content">
     <h2 class="titlexl">About Me</h2>
 
-    <h3 class="subtitle mt-6">What I Build — and Why</h3>
+    <h3 class="subtitle mt-6">Why I build</h3>
     <p class="paragraph">
-      I'm a developer, but more importantly, I'm a functional person. I don’t
-      just build things for the sake of building — I build to last. I believe
-      software should be efficient, understandable, and sustainable. Whether
-      it’s a small app or a game with narrative depth, I care that it works —
-      today, tomorrow, and even 20 years from now.
+      I build because I love software. That's it. I love creating things people
+      can use... or sometimes, even things no one ever will. I code for work,
+      sure, but I also code at home, just for the fun of it, to show friends, or
+      to push myself. Every project is a chance to explore new tech, try out
+      ideas, and learn something I didn’t know. It's addictive.
+    </p>
+
+    <h3 class="subtitle mt-6">What I build</h3>
+    <p class="paragraph">
+      I focus on systems that are clean, modular, and maintainable. I get a
+      little dopamine hit from designing a system, refactoring it, or debugging
+      until it clicks. I’m not chasing complexity for its own sake. To me,
+      efficiency matters, readability matters, but above all, sustainability
+      matters.
+    </p>
+    <p class="paragraph mt-2">
+      My goal is to come back to a project years later and just get it.
     </p>
 
     <h3 class="subtitle mt-6">My Values</h3>
     <p class="paragraph">
-      I value sustainability, privacy, and reducing friction — for both the
-      developer and the user. I code efficiently not just for performance, but
-      because efficient code is easier to debug, maintain, and reason about.
-    </p>
-    <p class="paragraph mt-2">
-      My goal is to create tools and experiences that respect the user’s time,
-      attention, and data. If something can do more with less, it should.
+      I think a lot about users as I design. LL Mood, for example, is a small
+      experiment in simplicity. I wanted people to use it without friction,
+      without ads, without feeling like they’re interacting with a product
+      designed to extract profit.
     </p>
 
-    <h3 class="subtitle mt-6">Current Projects</h3>
-    <p class="paragraph">
-      I work on projects under the name <strong>Little Labs</strong>. Right now,
-      that includes:
+    <p class="paragraph mt-2">
+      Security is a major factor too. For the apps I build, I prefer local
+      authentication and minimal data collection: if you don’t need it, don’t
+      take it. It’s better for users, and it keeps things simple.
     </p>
-    <ul class="list-disc list-inside paragraph">
-      <li>
-        A minimalist mood tracking app that runs offline and respects your
-        privacy
-      </li>
-      <li>
-        <em>Observer</em>, a personal narrative game exploring freedom, control,
-        and faith
-      </li>
-      <li>
-        This website, a hub for the tools, games, and ideas I want to share
-      </li>
-    </ul>
 
     <h3 class="subtitle mt-6">A Little More</h3>
     <p class="paragraph">
-      I try to live simply and think deeply. I believe tech should serve people,
-      not the other way around. If I can make something that helps someone feel
-      more grounded, more free, or more understood — that’s worth building.
+      Outside of code, I handle a lot and like to learn even more. Whether it’s
+      new technologies, new sports, or just better ways to live, learning is at
+      the core of what I do. Lately, I’ve been trying to slow down and focus on
+      the simple things. Building things is still a huge part of that, but I’m
+      more intentional about why and how I spend my time.
+    </p>
+
+    <p class="paragraph mt-6">
+      Thanks for reading about what I do and why. If you want to chat about
+      anything, feel free to reach out! You can also peek at my public projects
+      on
+      <a href="https://github.com/wanickols" target="_blank" class="link"
+        >GitHub</a
+      >.
     </p>
   </section>
 </template>
