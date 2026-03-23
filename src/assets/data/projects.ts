@@ -3,6 +3,7 @@ import libreImg from "../img/ProjectThumbnails/libretexts.png";
 import webImg from "../img/ProjectThumbnails/website.png";
 import aiBrickImg from "../img/ProjectThumbnails/BrickReader.png";
 import nueroImg from "../img/ProjectThumbnails/NeuroDemo.png";
+import reboundImg from "../img/ProjectThumbnails/ReboundTitle.png";
 
 export type Project = {
   slug: string;
@@ -18,6 +19,17 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: "rebound",
+    title: "Rebound",
+    description:
+      "A top-down multiplayer arcade game combining real-time physics and fast-paced gameplay. LAN multiplayer, and full controller support. Currently on hiatus.",
+    thumbnail: reboundImg, // replace with your actual image import
+    techStack: ["Rust", "Vue.js", "Tauri", "WebSockets", "UDP Networking"],
+    category: "desktop",
+
+    content: () => import("./projectPages/ReboundPage.vue"),
+  },
   {
     slug: "libretexts-adapt-go",
     title: "LibreTexts Adapt Go",
