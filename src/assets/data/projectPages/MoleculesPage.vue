@@ -50,7 +50,7 @@ import ProjectSection from "@/components/sections/ProjectSection.vue";
       <p>
         You can explore the live Molecules demo
         <a
-          href="/molecules/index.html"
+          href="/demos/molecules/index.html"
           target="_blank"
           class="text-blue-600 underline"
         >

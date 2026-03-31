@@ -1,0 +1,14 @@
+/demos/*/Build/*.br
+  Content-Encoding: br
+
+/demos/*/Build/*.data.br
+  Content-Type: application/octet-stream
+  Content-Encoding: br
+
+/demos/*/Build/*.wasm.br
+  Content-Type: application/wasm
+  Content-Encoding: br
+
+/demos/*/Build/*.js.br
+  Content-Type: application/javascript
+  Content-Encoding: br
