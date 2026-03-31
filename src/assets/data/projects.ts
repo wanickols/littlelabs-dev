@@ -4,6 +4,7 @@ import webImg from "../img/ProjectThumbnails/website.png";
 import aiBrickImg from "../img/ProjectThumbnails/BrickReader.png";
 import nueroImg from "../img/ProjectThumbnails/NeuroDemo.png";
 import reboundImg from "../img/ProjectThumbnails/ReboundTitle.png";
+import molImg from "../img/ProjectThumbnails/molecules.png";
 
 export type Project = {
   slug: string;
@@ -29,6 +30,17 @@ export const projects: Project[] = [
     category: "desktop",
 
     content: () => import("./projectPages/ReboundPage.vue"),
+  },
+  {
+    slug: "molecules",
+    title: "Molecules",
+    description:
+      "A 3D molecule viewer and editor built with Unity for multiple platforms, featuring chemical structure visualization and editing capabilities.",
+    thumbnail: molImg, // replace with your actual image import
+    techStack: ["Unity", "C#", "OpenGL"],
+    category: "websites",
+
+    content: () => import("./projectPages/MoleculesPage.vue"),
   },
   {
     slug: "libretexts-adapt-go",
